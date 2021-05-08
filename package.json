@@ -27,19 +27,20 @@
     "angular-count-to": "0.0.3",
     "angular-feather": "^6.0.10",
     "angularx-flatpickr": "^6.5.1",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.5.3",
+    "firebase": "^7.0 || ^8.0",
     "flatpickr": "^4.6.6",
     "masonry-layout": "^4.2.2",
     "ngx-masonry": "^10.0.6",
-    "ngx-owl-carousel-o": "^4.0.0",
+    "ngx-owl-carousel-o": "^5.0.0",
     "ngx-swiper-wrapper": "^10.0.0",
     "ngx-typed-js": "^2.0.2",
     "ngx-youtube-player": "^9.1.0",
     "rxjs": "~6.6.0",
     "swiper": "^6.3.3",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2",
-    "firebase": "^7.0 || ^8.0"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1100.2",

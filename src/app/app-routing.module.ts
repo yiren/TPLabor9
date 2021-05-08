@@ -16,6 +16,7 @@ import { AccountPaymentsComponent } from './core/components/account-payments/acc
 import { AccountProfileComponent } from './core/components/account-profile/account-profile.component';
 import { AccountSettingComponent } from './core/components/account-setting/account-setting.component';
 import { AccountWorksComponent } from './core/components/account-works/account-works.component';
+import { AppMasterPageComponent } from './core/components/app-master-page/master-page.component';
 import { ChangelogComponent } from './core/components/changelog/changelog.component';
 import { ComponentsComponent } from './core/components/components/components.component';
 import { DocumentationComponent } from './core/components/documentation/documentation.component';
@@ -123,6 +124,14 @@ const routes: Routes = [
     path: '',
     component: MasterPageComponent,
     children: [
+      { path: '', component: IndexComponent },
+      { path: '#', component: SwitcherComponent },
+    ]
+  },
+  {
+    path: 'ref',
+    component: AppMasterPageComponent,
+    children: [
       { path: 'account-messages', component: AccountMessagesComponent },
       { path: 'account-members', component: AccountMembersComponent },
       { path: 'account-payments', component: AccountPaymentsComponent },
@@ -139,7 +148,7 @@ const routes: Routes = [
       { path: 'helpcenter-guides', component: HelpcenterGuidesComponent },
       { path: 'helpcenter-overview', component: HelpcenterOverviewComponent },
       { path: 'helpcenter-support-request', component: HelpcenterSupportRequestComponent },
-      { path: '', component: IndexComponent },
+      { path: '', component: IndexLandingOneComponent},
       { path: 'index-agency', component: IndexAgencyComponent },
       { path: 'index-apps', component: IndexAppsComponent },
       { path: 'index-blog', component: IndexBlogComponent },
