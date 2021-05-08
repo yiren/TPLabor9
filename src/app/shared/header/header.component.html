@@ -1,0 +1,96 @@
+<!-- Navbar STart -->
+<header id="topnav" class="defaultscroll sticky" (window:scroll)="windowScroll()" [class]="navClass">
+  <div class="container">
+    <!-- Logo container
+    <div>
+      <a class="logo" routerLink="/index" *ngIf="navClass !== 'nav-light'">
+        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+        <img src="assets/images/logo-dark.png" class="l-light" height="24" alt="">
+      </a>
+      <a class="logo" routerLink="/index" *ngIf="navClass === 'nav-light'">
+        <img src="assets/images/logo-dark.png" class="l-dark" height="24" alt="">
+        <img src="assets/images/logo-light.png" class="l-light" height="24" alt="">
+      </a>
+    </div>
+    
+    <div class="buy-button">
+      <ng-template [ngIf]="navClass === 'nav-light'">
+        <a href="javascript: void(0);" class="btn btn-primary login-btn-primary">Buy Now</a>
+          <a href="javascript: void(0);" class="btn btn-light login-btn-light">Buy Now</a>
+      </ng-template>
+      <ng-template [ngIf]="navClass !== 'nav-light'">
+          <a href="javascript: void(0);" class="btn btn-primary" >Buy Now</a>
+      </ng-template>
+
+    </div>
+-->
+    <!--end login button-->
+    <!-- End Logo container-->
+    <div class="menu-extras">
+      <div class="menu-item">
+        <!-- Mobile menu toggle-->
+        <a class="navbar-toggle" (click)="toggleMenu()" [ngClass]="{'open': isCondensed === true}">
+          <div class="lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <!-- End mobile menu toggle-->
+      </div>
+    </div>
+
+    <div id="navigation">
+      <!-- Navigation Menu-->
+      <ul class="navigation-menu" [class]="navClass">
+        <li><a routerLink="/" class="nav-link-ref">最新消息</a></li>
+        <li class="has-submenu">
+          <a href="javascript:void(0)" (click)="onMenuClick($event)">關於分會</a><span class="menu-arrow"></span>
+          <ul class="submenu megamenu">
+            <li>
+              <ul>
+                <li><a class="nav-link-ref" routerLink="/index-saas">分會簡介</a></li>
+                <li><a class="nav-link-ref" routerLink="/index-classic-saas">組織架構</a></li>
+                <li><a class="nav-link-ref" routerLink="/index-agency">現任服務團隊</a></li>
+                <li><a class="nav-link-ref" routerLink="/index-apps">歷屆服務團隊</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a href="javascript:void(0)" (click)="onMenuClick($event)">會務訊息</a><span class="menu-arrow"></span>
+          <ul class="submenu">
+            <li><a class="nav-link-ref" routerLink="/page-aboutus">理事會會議記錄</a></li>
+          </ul>
+        </li>  
+        <li class="has-submenu" [ngClass]="{'active':currentSection === 'welfare'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#welfare'">福利資訊</a>
+        </li>
+        <li class="has-submenu" [ngClass]="{'active':currentSection === 'download'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#download'">常用下載</a>
+        </li>
+        <li class="has-submenu" [ngClass]="{'active':currentSection === 'faq'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#faq'">常見問題</a>
+        </li>
+        <li class="has-submenu" [ngClass]="{'active':currentSection === 'contact'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#contact'">聯絡我們</a>
+        </li>
+        </ul>
+        <!--
+          
+        
+        -->
+      <!--end navigation menu-->
+      <div class="buy-menu-btn d-none">
+        <a href="javascript: void(0);" target="_blank" class="btn btn-primary">Buy Now</a>
+
+      </div>
+      <!--end login button-->
+      <!--end login button-->
+    </div>
+    <!--end navigation-->
+  </div>
+  <!--end container-->
+</header>
+<!--end header-->
+<!-- Navbar End -->
