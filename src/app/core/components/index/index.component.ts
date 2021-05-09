@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import SwiperCore, { Pagination, Navigation, Keyboard, Scrollbar, EffectFade, Zoom, Autoplay } from "swiper/core";
+
+// install Swiper modules
+SwiperCore.use([Keyboard, Scrollbar, Navigation, Pagination, EffectFade, Zoom, Autoplay]);
 
 @Component({
   selector: 'tplu9-index',
@@ -7,7 +11,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-
+  currentSection;
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,

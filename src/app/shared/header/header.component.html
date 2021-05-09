@@ -43,7 +43,7 @@
     <div id="navigation">
       <!-- Navigation Menu-->
       <ul class="navigation-menu" [class]="navClass">
-        <li><a routerLink="" class="nav-link-ref">最新消息</a></li>
+        <li><a routerLink="" class="nav-link-ref">首頁</a></li>
         <li class="has-submenu">
           <a href="javascript:void(0)" (click)="onMenuClick($event)">關於分會</a><span class="menu-arrow"></span>
           <ul class="submenu megamenu">
@@ -63,21 +63,9 @@
             <li><a class="nav-link-ref" routerLink="page-aboutus">理事會會議記錄</a></li>
           </ul>
         </li>  
-        <li class="has-submenu" [ngClass]="{'active':currentSection === 'welfare'}">
-          <a href="javascript: void(0);" [ngxScrollTo]="'#welfare'">福利資訊</a>
-        </li>
-        <li class="has-submenu" [ngClass]="{'active':currentSection === 'download'}">
-          <a href="javascript: void(0);" [ngxScrollTo]="'#download'">常用下載</a>
-        </li>
-        <li class="has-submenu" [ngClass]="{'active':currentSection === 'info'}">
-          <a href="javascript: void(0);" [ngxScrollTo]="'#download'">常用資訊</a>
-        </li>
-        <li class="has-submenu" [ngClass]="{'active':currentSection === 'faq'}">
-          <a href="javascript: void(0);" [ngxScrollTo]="'#faq'">常見問題</a>
-        </li>
-        <li class="has-submenu" [ngClass]="{'active':currentSection === 'contact'}">
-          <a href="javascript: void(0);" [ngxScrollTo]="'#contact'">聯絡我們</a>
-        </li>
+        <li><a routerLink="" class="nav-link-ref">表單下載</a></li>
+        <li><a routerLink="" class="nav-link-ref">福利資訊</a></li>
+        
         </ul>
         <!--
           

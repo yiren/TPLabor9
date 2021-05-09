@@ -1,44 +1,122 @@
  <!-- Hero Start -->
- <section class="bg-half-170  d-table w-100" id="home">
-   <div class="container">
-     <div class="row align-items-center">
-       <div class="col-lg-7 col-md-7">
-         <div class="title-heading mt-4">
-           <h1 class="heading mb-3">Our Creativity Is Your <span class="text-primary">Success</span> </h1>
-           <p class="para-desc text-muted">Launch your campaign and benefit from our expertise on designing and managing
-             conversion centered bootstrap4 html page.</p>
-           <div class="mt-4">
-             <a routerLink="page-contact-one" class="btn btn-primary mt-2 mr-2"><i class="mdi mdi-email"></i> Get
-               Started</a>
-             <a routerLink="documentation" class="btn btn-outline-primary mt-2"><i class="mdi mdi-book-outline"></i>
-               Documentation</a>
-           </div>
-         </div>
-       </div>
-       <!--end col-->
+ <section class="bg-half-120  d-table w-100" id="home">
+<div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div class="swiper-container">
+          <swiper 
+          [pagination]="{clickable:true}" 
+          [keyboard]="{
+            enabled: true
+          }"
+          [navigation]="true" 
+          [slidesPerView]="'auto'"
+          [centeredSlides]="true"
+          [autoHeight]="true"
+          [autoplay]="{
+            delay: 2500,
+            disableOnInteraction: false
+          }"
+          effect="fade"
+          [spaceBetween]="30"
+          >
+            <ng-template swiperSlide>
+              <div class="swiper-zoom-container">
+                <img src="assets/images/tplu9/1.png" alt="">
+              </div>
+              
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="swiper-zoom-container">
+                <img src="assets/images/tplu9/0505/428190.jpg" alt="">
+              </div>
+             
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="swiper-zoom-container">
+                <img src="assets/images/tplu9/0505/428186.jpg" alt="">
+              </div>
+              
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="swiper-zoom-container">
+                <img src="assets/images/tplu9/0505/428185.jpg" alt="">
+              </div>
+              
+            </ng-template>
+            
+          </swiper>
+        </div>
+        
+      </div>
+        
+  
+        <!-- START SIDEBAR -->
+        <div class="col-2">
+          <div class="card border-1 sidebar sticky-bar rounded shadow">
+            <div class="card-body">
+             
+  
+              <!-- CATAGORIES -->
+              <div class="widget mb-2 pb-1">
+                <h4 class="widget-title"><i-feather name="sidebar"></i-feather>本頁導覽</h4>
+                <ul class="list-unstyled mt-4 mb-0 blog-catagories">
+                  <li class="has-submenu" [ngClass]="{'active':currentSection === 'welfare'}">
+                    <a href="javascript: void(0);" [ngxScrollTo]="'#welfare'">最新消息</a>
+                  </li>
+                  <li class="has-submenu" [ngClass]="{'active':currentSection === 'download'}">
+                    <a href="javascript: void(0);" [ngxScrollTo]="'#download'">常用下載</a>
+                  </li>
+                  <li class="has-submenu" [ngClass]="{'active':currentSection === 'info'}">
+                    <a href="javascript: void(0);" [ngxScrollTo]="'#download'">相關連結</a>
+                  </li>
+                  <li class="has-submenu" [ngClass]="{'active':currentSection === 'faq'}">
+                    <a href="javascript: void(0);" [ngxScrollTo]="'#faq'">常見問題</a>
+                  </li>
+                  <li class="has-submenu" [ngClass]="{'active':currentSection === 'contact'}">
+                    <a href="javascript: void(0);" [ngxScrollTo]="'#contact'">聯絡我們</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- CATAGORIES -->
+  
+  
+             
+              <!-- SOCIAL -->
+            </div>
+          </div>
+        </div>
+        <!--end col-->
+        <!-- END SIDEBAR -->
+         <!--end col-->
+    
+    
 
-       <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
-         <img src="assets/images/illustrator/Startup_SVG.svg" alt="">
-       </div>
+       <div class="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+        <div class="classic-saas-image position-relative">
+          <div class="bg-saas-shape position-relative">
+            <!--
+            <img src="assets/images/saas/classic01.png" class="mx-auto d-block" alt="">
+            -->
+          </div>
+        </div>
+      </div>
        <!--end col-->
      </div>
      <!--end row-->
-   </div>
+    </div>
    <!--end container-->
  </section>
  <!--end section-->
  <!-- Hero End -->
-
- <!-- How It Work Start -->
+<!-- How It Work Start -->
  <section class="section bg-light border-bottom">
    <div class="container">
      <div class="row justify-content-center">
        <div class="col-12 text-center">
          <div class="section-title mb-4 pb-2">
-           <h4 class="title mb-4">How It Work ?</h4>
-           <p class="text-muted para-desc mb-0 mx-auto">Start working with <span
-               class="text-primary font-weight-bold">Landrick</span> that can provide everything you need to generate
-             awareness, drive traffic, connect.</p>
+           <h4 class="title mb-4">最新消息</h4>
+          
          </div>
        </div>
        <!--end col-->
@@ -52,21 +130,8 @@
        <!--end col-->
 
        <div class="col-lg-7 col-md-6 mt-4 pt-2">
-         <div class="section-title ml-lg-5">
-           <h4 class="title mb-4">Change the way you build websites</h4>
-           <p class="text-muted">You can combine all the Landrick templates into a single one, you can take a component
-             from the Application theme and use it in the Website.</p>
-           <ul class="list-unstyled text-muted">
-             <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Digital
-               Marketing Solutions for Tomorrow</li>
-             <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Our Talented
-               & Experienced Marketing Agency</li>
-             <li class="mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Create your
-               own skin to match your brand</li>
-           </ul>
-           <a href="javascript:void(0)" class="mt-3 h6 text-primary">Find Out More <i
-               class="mdi mdi-chevron-right"></i></a>
-         </div>
+         
+         
        </div>
        <!--end col-->
      </div>
@@ -87,14 +152,22 @@
  <!-- FAQ n Contact Start -->
  <section class="section bg-light" id="faq">
    <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="section-title mb-4 pb-2 text-center">
+          <h4 class="title mb-4">常見問題</h4>
+        </div>
+      </div>
+      <!--end col-->
+    </div>
+    <!--end row-->
      <div class="row">
        <div class="col-md-6 col-12">
          <div class="media">
            <i-feather name="help-circle" class="fea icon-ex-md text-primary mr-2 mt-1"></i-feather>
            <div class="media-body">
-             <h5 class="mt-0">How our <span class="text-primary">Landrick</span> work ?</h5>
-             <p class="answer text-muted mb-0">Due to its widespread use as filler text for layouts, non-readability is
-               of great importance: human perception is tuned to recognize certain patterns and repetitions in texts.
+             <h5 class="mt-0">?</h5>
+             <p class="answer text-muted mb-0">
              </p>
            </div>
          </div>
@@ -105,9 +178,8 @@
          <div class="media">
            <i-feather name="help-circle" class="fea icon-ex-md text-primary mr-2 mt-1"></i-feather>
            <div class="media-body">
-             <h5 class="mt-0"> What is the main process open account ?</h5>
-             <p class="answer text-muted mb-0">If the distribution of letters and 'words' is random, the reader will not
-               be distracted from making a neutral judgement on the visual impact</p>
+             <h5 class="mt-0">?</h5>
+             <p class="answer text-muted mb-0"></p>
            </div>
          </div>
        </div>
@@ -117,9 +189,8 @@
          <div class="media">
            <i-feather name="help-circle" class="fea icon-ex-md text-primary mr-2 mt-1"></i-feather>
            <div class="media-body">
-             <h5 class="mt-0"> How to make unlimited data entry ?</h5>
-             <p class="answer text-muted mb-0">Furthermore, it is advantageous when the dummy text is relatively
-               realistic so that the layout impression of the final publication is not compromised.</p>
+             <h5 class="mt-0">?</h5>
+             <p class="answer text-muted mb-0"></p>
            </div>
          </div>
        </div>
@@ -129,10 +200,8 @@
          <div class="media">
            <i-feather name="help-circle" class="fea icon-ex-md text-primary mr-2 mt-1"></i-feather>
            <div class="media-body">
-             <h5 class="mt-0"> Is <span class="text-primary">Landrick</span> safer to use with my account ?</h5>
-             <p class="answer text-muted mb-0">The most well-known dummy text is the 'Lorem Ipsum', which is said to
-               have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or
-               less corresponds to 'proper' Latin.</p>
+             <h5 class="mt-0"> </h5>
+             <p class="answer text-muted mb-0"></p>
            </div>
          </div>
        </div>
@@ -158,7 +227,6 @@
  </div>
  -->
  
-
 
  <!-- Back to top -->
  <a href="javascript: void(0);" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"

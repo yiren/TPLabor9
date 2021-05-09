@@ -3175,6 +3175,16 @@ p {
   background-position: center center;
 }
 
+.bg-half-120 {
+  padding: 120px 0;
+  background-size: cover;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  position: relative;
+  background-position: center center;
+}
+
 .bg-half {
   padding: 184px 0 90px;
   background-size: cover;

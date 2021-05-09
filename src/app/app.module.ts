@@ -11,9 +11,7 @@ import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-import { SwiperModule } from 'ngx-swiper-wrapper';
-import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
-import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { SwiperModule } from 'swiper/angular';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { FlatpickrModule } from 'angularx-flatpickr';
@@ -146,10 +144,6 @@ import { IndexOnlineLearningComponent } from './core/components/index-online-lea
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppFooterComponent } from './shared/appfooter/footer.component';
 
-const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
-  direction: 'horizontal',
-  slidesPerView: 'auto'
-};
 
 @NgModule({
   declarations: [
@@ -303,12 +297,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
-  ],
-  providers: [
-    {
-      provide: SWIPER_CONFIG,
-      useValue: DEFAULT_SWIPER_CONFIG
-    },
   ],
   bootstrap: [AppComponent]
 })
