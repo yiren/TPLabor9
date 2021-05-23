@@ -125,6 +125,8 @@ const routes: Routes = [
     component: MasterPageComponent,
     children: [
       { path: '', component: IndexComponent },
+      { path: 'intro', component: PageHistoryComponent },
+      { path: 'current_team', component: PageTeamComponent },
       { path: '#', component: SwitcherComponent },
     ]
   },
