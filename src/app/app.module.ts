@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { SwiperModule } from 'swiper/angular';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
@@ -143,6 +145,14 @@ import { SwitcherComponent } from './shared/switcher/switcher.component';
 import { IndexOnlineLearningComponent } from './core/components/index-online-learning/index-online-learning.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppFooterComponent } from './shared/appfooter/footer.component';
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { zh_TW } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import zh from '@angular/common/locales/zh';
+import { HttpClientModule } from '@angular/common/http';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NgZorroAntdUIModule } from './shared/ant-design/ant-design.module';
+registerLocaleData(zh);
 
 
 @NgModule({
@@ -284,12 +294,15 @@ import { AppFooterComponent } from './shared/appfooter/footer.component';
     NgxYoutubePlayerModule,
     NgbModule,
     NgbNavModule,
+    
     FormsModule,
     SwiperModule,
     NgxTypedJsModule,
     FlatpickrModule.forRoot(),
     CountToModule,
-    NgxMasonryModule
+    NgxMasonryModule,
+    HttpClientModule,
+    NgZorroAntdUIModule
   ],
   exports: [
     FeatherModule,
@@ -298,6 +311,7 @@ import { AppFooterComponent } from './shared/appfooter/footer.component';
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [{ provide: NZ_I18N, useValue: zh_TW }]
 })
 export class AppModule { }
